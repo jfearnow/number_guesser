@@ -13,7 +13,7 @@ def number_guessing_game(guess, answer):
         guess = int(guess)
         number_guessing_game(guess, answer)
     else:
-        print('Youre Right')
+        print("You're Right")
         play_again_option = input('Enter 1 to play again, otherwise exit program \n')
         play_again_option = int(play_again_option)
         if play_again_option == 1:
