@@ -1,7 +1,11 @@
+# import random module
 import random
-answer = random.randint(1,11)
+
+# Assign a random interger (1-10) to the variable 'answer'
+answer = random.randint(1,10)
 guess = 0
 
+# Number Guessing Game Function
 def number_guessing_game(guess, answer):
     while guess == 0:
         guess = int(input('Guess a Number \n'))
@@ -15,6 +19,10 @@ def number_guessing_game(guess, answer):
         print("You're Right")
         play_again_option = int(input('Enter 1 to play again, otherwise exit program \n'))
         if play_again_option == 1:
-            new_answer = random.randint(1,11)
+            new_answer = random.randint(1,10)
             number_guessing_game(0, new_answer)
+
+# Call numbers_guessing_game function
 number_guessing_game(guess, answer)
+
+# TODO: Add error handling for when user does not enter a number
